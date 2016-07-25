@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "## Import Data\nTrain <- read.csv(\"F:/theSmartRecruit/theSmartRecruit/data/Train.csv\")\nTest <- read.csv(\"F:/theSmartRecruit/theSmartRecruit/data/Test.csv\")\n\n## Data Transformations\n# New columns added :\n# 1. Applicant Age : Applicants Age during date of joining\n# 2. Manager Age : Managers Age while Applicant Joined\n# 3. Manager Experience : Managers Experience in month in company while applicant joined\n# Old Columns removed\n# 1. Applicant DOB\n# 2. Manager DOB\n# 3. Manager DOJ\n# 4. Application Reciept Date\n\nTrain[,'Office_PIN'] = as.factor(Train[,'Office_PIN'])\nTrain[,'Applicant_City_PIN'] = as.factor(Train[,'Applicant_City_PIN'])\nTrain[,'Manager_Grade'] = as.factor(Train[,'Manager_Grade'])\nTrain[,'Business_Sourced'] = as.factor(Train[,'Business_Sourced'])\n\nTest[,'Office_PIN'] = as.factor(Test[,'Office_PIN'])\nTest[,'Applicant_City_PIN'] = as.factor(Test[,'Applicant_City_PIN'])\nTest[,'Manager_Grade'] = as.factor(Test[,'Manager_Grade'])\n\n\n\n\n\n",
+    "created" : 1469259531748.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3454085389",
+    "id" : "8A1473EB",
+    "lastKnownWriteTime" : 1469345913,
+    "last_content_update" : 1469345913132,
+    "path" : "F:/theSmartRecruit/theSmartRecruit/code/model-1.R",
+    "project_path" : "code/model-1.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

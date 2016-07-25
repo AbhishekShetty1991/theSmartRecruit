@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(e1071)\n\n\ns.v.m <-svm(Business_Sourced ~ ., data = Train)\nsummary(s.v.m)",
+    "created" : 1469359880569.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1423659621",
+    "id" : "D45003E4",
+    "lastKnownWriteTime" : 1469360898,
+    "last_content_update" : 1469360898369,
+    "path" : "F:/theSmartRecruit/theSmartRecruit/code/svm.R",
+    "project_path" : "code/svm.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
