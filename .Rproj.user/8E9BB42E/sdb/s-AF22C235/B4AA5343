@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "library(e1071)\n\nfit <-naiveBayes(Business_Sourced ~ ., data = Train)\nsummary(fit)\n\npred= predict(fit,Train)\n\ntable(pred, Train$Business_Sourced)\naccuracy <- mean(pred == Train$Business_Sourced)\naccuracy\n",
+    "contents" : "library(e1071)\n\nNB <-naiveBayes(Business_Sourced ~ ., data = Train)\nsummary(NB)\n\npred= predict(NB,Train)\n\ntable(pred, Train$Business_Sourced)\naccuracy <- mean(pred == Train$Business_Sourced)\naccuracy\n",
     "created" : 1469359174442.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1924691375",
+    "hash" : "180549988",
     "id" : "B4AA5343",
-    "lastKnownWriteTime" : 1469359770,
-    "last_content_update" : 1469359770591,
+    "lastKnownWriteTime" : 1469425056,
+    "last_content_update" : 1469425056767,
     "path" : "F:/theSmartRecruit/theSmartRecruit/code/naiveBayes.R",
     "project_path" : "code/naiveBayes.R",
     "properties" : {

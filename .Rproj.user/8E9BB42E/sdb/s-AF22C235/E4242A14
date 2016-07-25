@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(rpart)\nlibrary(rpart.plot)\n\ndecision.tree <- rpart(Business_Sourced ~ ., data = Train, method = \"class\")\n\nprintcp(decision.tree) # display the results \nplotcp(decision.tree) # visualize cross-validation results \nsummary(decision.tree) # detailed summary of splits\n\n# plot tree \nplot(decision.tree, uniform=TRUE, \n     main=\"The Smart Recruit\")\ntext(decision.tree, use.n=TRUE, all=TRUE, cex=.8)\n\n# prune the tree \npfit<- prune(decision.tree, cp= decision.tree$cptable[which.min(decision.tree$cptable[,\"xerror\"]),\"CP\"])\n\n# plot the pruned tree \nplot(p.decision.tree, uniform=TRUE, \n     main=\"Pruned Smart Recruit\")\ntext(p.decision.tree, use.n=TRUE, all=TRUE, cex=.8)\n\ndecision.tree.pred= predict(decision.tree,Train)\n\ntable(decision.tree.pred, Train$Business_Sourced)\naccuracy <- mean(decision.tree.pred == Train$Business_Sourced)\naccuracy\n\n",
+    "created" : 1469425002443.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3838725335",
+    "id" : "E4242A14",
+    "lastKnownWriteTime" : 1469427281,
+    "last_content_update" : 1469427281577,
+    "path" : "F:/theSmartRecruit/theSmartRecruit/code/decision-tree.R",
+    "project_path" : "code/decision-tree.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

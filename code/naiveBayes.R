@@ -1,9 +1,9 @@
 library(e1071)
 
-fit <-naiveBayes(Business_Sourced ~ ., data = Train)
-summary(fit)
+NB <-naiveBayes(Business_Sourced ~ ., data = Train)
+summary(NB)
 
-pred= predict(fit,Train)
+pred= predict(NB,Train)
 
 table(pred, Train$Business_Sourced)
 accuracy <- mean(pred == Train$Business_Sourced)

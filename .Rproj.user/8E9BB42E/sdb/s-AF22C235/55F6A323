@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(randomForest)\n\nrandom.forest <- randomForest(Business_Sourced ~ ., data = Train)\n\nprint(random.forest) # view results \nimportance(random.forest) # importance of each predictor\n\nrandom.forest.pred= predict(random.forest,Train)\n\ntable(random.forest.pred, Train$Business_Sourced)\naccuracy <- mean(random.forest.pred == Train$Business_Sourced)\naccuracy",
+    "created" : 1469426950350.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1326415671",
+    "id" : "55F6A323",
+    "lastKnownWriteTime" : 1469427269,
+    "last_content_update" : 1469427269987,
+    "path" : "F:/theSmartRecruit/theSmartRecruit/code/randomForest.R",
+    "project_path" : "code/randomForest.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
